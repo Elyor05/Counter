@@ -19,7 +19,7 @@ clik = Label(okno, text='0',
              font=('Helvetica', 30, 'bold'),
              )
 
-clik.place(x=20, y=20)
+clik.place(relx=20, y=20, anchor="n")
 
 button = Button(okno, text='click_here',
                 fg='black', bg='yellow',
@@ -27,6 +27,6 @@ button = Button(okno, text='click_here',
                 padx=5, pady=5,
                 command=click
                 )
-button.place(x=100, y=100)
+button.place(relx=0.3, rely=0.6)
 
 okno.mainloop()
